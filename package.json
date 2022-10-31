@@ -1,0 +1,18 @@
+{
+  "name": "weathersapi",
+  "version": "1.0.0",
+  "description": "Messase send to database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/app.js -e pug,js"
+  },
+  "author": "Fas Foysal",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "requests": "^0.3.0"
+  }
+}

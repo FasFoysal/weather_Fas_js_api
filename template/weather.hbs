@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="/coustom/style/style.css">
+
+<body>
+    {{>navbar}}
+    <div class="time m-3">
+        <b>Bangladesh: </b>
+        <b id="days"></b>
+        <b id="dateTime"></b>
+    </div>
+    <nav class="navbar">
+        <div class="container-fluid justify-content-center">
+            <form style="width: 40%;" class="d-flex" role="search" action="weather" method="post">
+                <input class="form-control me-2" type="search" placeholder="Enter your Country or Distic name"
+                    aria-label="Search" name="loction" id="location">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+<div class="row g-0 text-center mt-5">
+    <div class="col-6 col-md-5">
+        <div class="mt-5 edit">
+            <img id="img" src="{{img}}" alt="">
+            <b>{{temp}}</b>
+            <br>
+            <h5><u>{{err}}</u></h5>
+            <b>{{city}}</b>
+            <br>
+            <b>{{country}}</b>
+            <br>
+            <b>{{condition}}</b>
+            <br>
+            <b>{{time}}</b>
+        </div>
+    </div>
+  <div class="col-sm-6 col-md-7">
+    <img class="img-fluid" src="design/image/bg.svg" alt="" srcset="">
+  </div>
+</div>
+
+    {{>down}}
+
+    <script src="./coustom/style/coustom.js"></script>
+</body>
+
+</html>
