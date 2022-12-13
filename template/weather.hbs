@@ -17,16 +17,16 @@
     </div>
     <nav class="navbar">
         <div class="container-fluid justify-content-center">
-            <form style="width: 40%;" class="d-flex" role="search" action="weather" method="post">
-                <input class="form-control me-2" type="search" placeholder="Enter your Country or Distic name"
+            <form id="form" style="width: 40%;" class="d-flex" role="search" action="weather" method="post">
+                <input  class="form-control me-2" type="search" placeholder="Enter your Country or Distic name"
                     aria-label="Search" name="loction" id="location">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </div>
     </nav>
     <h1>{{err}}</h1>
-<div class="row g-0 text-center mt-5">
-    <div class="col-6 col-md-5">
+<div class="weather row g-0 text-center mt-5">
+    <div class="m_auto_c col-6 col-md-5">
         <div class="mt-5 edit">
             <img id="img" src="{{img}}" alt="">
             <b>{{temp}}</b>
