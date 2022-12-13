@@ -24,7 +24,7 @@ app.get("/",(req,res)=>{
 app.post('/weather',(req,res)=>{
 
   let location = req.body.loction;
-     requests(`http://api.weatherapi.com/v1/current.json?key=89989e85f61749d6840135231222510&q=${location}&aqi=yes`)
+     requests(`http://api.weatherapi.com/v1/current.json?key=8d983a242f4e482e803121409201911&q=${location}&aqi=yes`)
     .on("data", (chunk) =>{
       const jsonToObj =  JSON.parse(chunk);
 
@@ -39,7 +39,7 @@ app.post('/weather',(req,res)=>{
 })
 app.get('/weather', (req,res)=>{
 
-     requests("http://api.weatherapi.com/v1/current.json?key=89989e85f61749d6840135231222510&q=bangladesh&aqi=yes")
+     requests("http://api.weatherapi.com/v1/current.json?key=8d983a242f4e482e803121409201911&q=bangladesh&aqi=yes")
     .on("data", (chunk) =>{
       const jsonToObj =  JSON.parse(chunk);
       const icon = jsonToObj.current.condition.icon;

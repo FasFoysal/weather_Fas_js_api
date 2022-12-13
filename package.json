@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node src/app.js -e pug,js"
+    "dev": "nodemon src/app.js -e pug,js",
+    "prodc": "node src/app.js -e pug,js"
   },
   "author": "Fas Foysal",
   "license": "ISC",
